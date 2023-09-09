@@ -1,7 +1,7 @@
 export const projectData = [
   {
     id: 1,
-    src: "fakebook.PNG",
+    src: "fakebook.png",
     title: "Fakebook",
     summary:
       "A Full Stack MERN social media application which replicates the popular Facebook platform with modern technologies   ",
