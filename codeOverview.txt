@@ -1,0 +1,36 @@
+Client/                            ->
+├─ node_modules/                            ->
+├─ public/                            ->
+│  ├─ favicon.ico                            ->
+│  ├─ index.html                            ->
+│  ├─ robots.txt                            ->
+├─ src/                            ->
+│  ├─ index.js                            ->
+│  ├─ index.css                            ->
+│  ├─ theme.js                            ->
+│  ├─ Components/                            ->
+│  │  ├─ FlexBetween.jsx                            ->
+│  │  ├─ Friend.jsx                            ->
+│  │  ├─ UserImage.jsx                            ->
+│  │  ├─ WidgetWrapper.jsx                            ->
+│  ├─ scenes/                            ->
+│  │  ├─ homePage/                            ->
+│  │  │  ├─ index.jsx                            ->
+│  │  ├─ loginPage/                            ->
+│  │  │  ├─ index.jsx                            ->
+│  │  ├─ profilePage/                            ->
+│  │  │  ├─ index.jsx                            ->
+│  │  ├─ navbar/                            ->
+│  │  │  ├─ index.jsx                            ->
+│  │  ├─ widgets/                            ->
+│  │  │  ├─ AdvertWidget.jsx     ->
+│  │  │  ├─ FriendListWidget.jsx ->
+│  │  │  ├─ MyPostWidget.jsx     ->
+│  │  │  ├─ PostsWidget.jsx      ->
+│  │  │  ├─ Post.jsx             ->
+│  │  │  ├─ UserWidget.jsx                            ->
+│  ├─ state/                            ->
+│  │  ├─ index.jsx                            ->
+├─ .gitignore                            ->
+├─ package.json                            ->
+├─ README.md                            ->
