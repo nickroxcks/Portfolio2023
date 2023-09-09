@@ -1,17 +1,16 @@
 import { Card, Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer } from "../motion";
+import { fadeIn, slideIn, staggerContainer, zoomIn } from "../motion";
 
 const SkillsCard = (props) => {
 
     ////background-image: linear-gradient(to right bottom, #9b14af, #ea007d, #ff4c45, #fa9405, #d1d01b);
   return (
     <motion.div
-      variants={fadeIn(props.data.transition, "tween", 0.2, 1)}
-      initial="hidden"
-      whileInView="show"
-      
-    >
+    variants={zoomIn(0.2, 0.5)}
+    initial="hidden"
+    whileInView="show"
+  >
     <Card
       sx={[
         {

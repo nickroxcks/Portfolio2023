@@ -5,17 +5,6 @@ import { projectData } from "constants/constants";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../SectionTitle";
 
-const Divider = styled.div`
-  width: 64px;
-  height: 6px;
-  border-radius: 10px;
-  background: linear-gradient(
-    270deg,
-    rgb(19, 173, 199) 0%,
-    rgb(148, 93, 214) 100%
-  );
-  margin-bottom: 20px;
-`;
 const Projects = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const theme = useTheme();

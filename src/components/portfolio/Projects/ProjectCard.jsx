@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import FlexBetween from "components/FlexBetween";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer } from "../motion";
+import { fadeIn, slideIn, staggerContainer, zoomIn } from "../motion";
 
 export default function ProjectCard(props) {
   const theme = useTheme();
@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
   const testColor = theme.palette.background.alt;
   return (
     <motion.div
-      variants={fadeIn(props.data.transition, "tween", 0.2, 1)}
+      variants={zoomIn(0.2, 0.5)}
       initial="hidden"
       whileInView="show"
     >

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Box,
   IconButton,
@@ -27,11 +27,29 @@ const NavbarPortfolio = (props) => {
   //const neutralLight = theme.palette.neutral.light;
   //const dark = theme.palette.neutral.dark;
   const background = theme.palette.background.default;
+
+  let curLocation = 'home'
+  const moveWindow = (newLocation) => {
+    curLocation = newLocation;
+    setIsMobileMenuToggled(!isMobileMenuToggled)
+
+  }
   //const primaryLight = theme.palette.primary.light;
   //const alt = theme.palette.background.alt;
   //const pink = theme.palette.primary.pink;
   dispatch(setDarkMode()); //only dark mode is available for portfolio
 
+
+  /*
+  useEffect(()=> {
+    if(!isNonMobileScreens && !isMobileMenuToggled){
+      document.getElementById(curLocation).scrollIntoView();
+    }
+
+  },
+  [isMobileMenuToggled])
+
+  */
   /*
   - FlexBetween we defined is a mui Box. Therefore we can pass the css properties here
   - This works because this is a mui box. Other components you need to use sx prop
@@ -40,7 +58,7 @@ const NavbarPortfolio = (props) => {
   */
   return (
     
-    <FlexBetween padding="1rem 6%" sx={{ backgroundColor: "transparent" }} >
+    <FlexBetween padding="1rem 6%" sx={{ backgroundColor: "transparent", }} >
       <FlexBetween>
         <Typography
           sx={{
@@ -169,6 +187,7 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
+                href: '#home'
               }}
             >
               HOME
@@ -178,6 +197,7 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
+                href: '#projects'
               }}
             >
               PROJECTS
@@ -187,6 +207,7 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
+                href: '#skills'
               }}
             >
               SKILLS
@@ -196,6 +217,7 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
+                href: '#timeline'
               }}
             >
               TIMELINE
@@ -205,16 +227,17 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
+                href: '#contact'
               }}
             >
               CONTACT
             </Button>
-            <IconButton>
+            <IconButton href="https://github.com/nickroxcks">
               <GitHub
                 sx={{ fontSize: "30px", color: "rgba(255, 255, 255, 0.75)" }}
               />
             </IconButton>
-            <IconButton>
+            <IconButton href="https://www.linkedin.com/in/nicholas-serrano/">
               <LinkedIn
                 sx={{ fontSize: "30px", color: "rgba(255, 255, 255, 0.75)" }}
               ></LinkedIn>

@@ -56,7 +56,7 @@ const Portfolio = () => {
           "linear-gradient(to right bottom, #0c0218, #13061f, #190a26, #1e0d2d, #250e33, #2f113f, #3a144b, #461757, #581f6e, #6a2785, #7d309e, #9039b7)",
       }}
     >
-      <Box>
+
         <Particles
           id="tsparticles"
           options={particleData}
@@ -67,11 +67,11 @@ const Portfolio = () => {
         <NavbarPortfolio />
 
         <Hero/>
-      </Box>
+
 
       <Box
         width="100%"
-        padding="2rem 6%"
+        padding="1rem 6%"
         gap="0.5rem"
         //position={"absolute"}  will get rid of animation
         //sx={{ background: 'linear-gradient(to right bottom, #9b14af, #ea007d, #ff4c45, #fa9405, #d1d01b)' }}
