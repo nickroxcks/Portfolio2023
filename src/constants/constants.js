@@ -42,7 +42,7 @@ export const projectData = [
   },
   {
     id: 4,
-    src: "dragonShell.PNG",
+    src: "dragonShell.png",
     title: "Dragon Shell",
     summary:
       "DragonShell is a command line application written in C++ which allows its users to interact with their operating system and perform standard OS level commands.",
