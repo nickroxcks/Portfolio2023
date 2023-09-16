@@ -52,7 +52,7 @@ const Contact = () => {
     if (reason === "clickaway") {
       return;
     }
-    setToastState({ openFailed: false, openSuccess: false})
+    setToastState({ openFailed: false, openSuccess: false });
   };
 
   const handleFormSubmit = (e) => {
@@ -68,11 +68,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setToastState({open: true, openFailed: false, openSuccess: true})
+          setToastState({ open: true, openFailed: false, openSuccess: true });
         },
         (error) => {
           console.log(error.text);
-          setToastState({open: true, openFailed: true, openSuccess: false})
+          setToastState({ open: true, openFailed: true, openSuccess: false });
         }
       );
   };
@@ -85,7 +85,11 @@ const Contact = () => {
         p="2rem"
         m="2rem auto"
         borderRadius="1.5rem"
-        backgroundColor={"#0f1624"}
+        //backgroundColor={"#0f1624"}
+        sx={{
+          background:
+            "linear-gradient(to left top, #0c0218, #13061f, #190a26, #1e0d2d, #250e33, #2f113f, #3a144b, #461757, #581f6e, #6a2785, #7d309e, #9039b7)",
+        }}
         position={"relative"}
         boxShadow="0px 0px 8px rgb(255,255,255)"
       >
@@ -164,9 +168,7 @@ const Contact = () => {
                   onChange={handleChange}
                   value={values.message}
                   name="message"
-                  error={
-                    Boolean(touched.message) && Boolean(errors.message)
-                  }
+                  error={Boolean(touched.message) && Boolean(errors.message)}
                   rows={4}
                   multiline
                   sx={{ gridColumn: "span 4" }}
@@ -183,7 +185,9 @@ const Contact = () => {
                     m: "2rem 0",
                     p: "1rem",
                     //background: 'linear-gradient(to right, #d41aa4, #c9209e, #be2498, #b32892, #a92a8c, #a12887, #992782, #91257d, #891f78, #811973, #7a136e, #720c69)',
-                    backgroundColor: palette.primary.pink,
+                    //backgroundColor: palette.primary.pink,
+                    background: 'linear-gradient(to right, #d41aa4, #c9209e, #be2498, #b32892, #a92a8c, #a12887, #992782, #91257d, #891f78, #811973, #7a136e, #720c69)',
+
                     color: palette.background.alt,
                     "&:hover": { color: palette.primary.pink },
                   }}
@@ -202,13 +206,13 @@ const Contact = () => {
           onClose={handleClose}
           anchorOrigin={{ vertical: "top", horizontal: "center" }}
         >
-            <Alert
-              onClose={handleClose}
-              severity="success"
-              sx={{ width: "100%" }}
-            >
-              Email sent! Thanks for reaching out!
-            </Alert>
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            Email sent! Thanks for reaching out!
+          </Alert>
         </Snackbar>
 
         <Snackbar
@@ -217,13 +221,9 @@ const Contact = () => {
           onClose={handleClose}
           anchorOrigin={{ vertical: "top", horizontal: "center" }}
         >
-            <Alert
-              onClose={handleClose}
-              severity="error"
-              sx={{ width: "100%" }}
-            >
-              Email failed to send!
-            </Alert>
+          <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+            Email failed to send!
+          </Alert>
         </Snackbar>
       </Box>
     </div>

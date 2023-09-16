@@ -35,8 +35,8 @@ const Desc = styled.p`
   }
 `;
 
-const Button = styled.button`
-  background: linear-gradient(
+/*
+background: linear-gradient(
     to right,
     #d41aa4,
     #c9209e,
@@ -51,6 +51,10 @@ const Button = styled.button`
     #7a136e,
     #720c69
   );
+
+*/
+const Button = styled.button`
+background: linear-gradient(to right, #d41aa4, #c9209e, #be2498, #b32892, #a92a8c, #a12887, #992782, #91257d, #891f78, #811973, #7a136e, #720c69);
   color: white;
   padding: 10px;
   border: none;
@@ -62,6 +66,16 @@ const Button = styled.button`
   position: relative;
   opacity: 0.9;
   margin-top: 20px;
+
+  &:hover {
+    animation: slidebg 5s linear infinite;
+  }
+
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
 `;
 
 const Hero = () => {
@@ -79,9 +93,9 @@ const Hero = () => {
           textAlign: "center",
           height: "90vh",
           display: "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "alignItems": "center",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <TopDesc>HI THERE, WELCOME TO MY SITE</TopDesc>
@@ -93,7 +107,7 @@ const Hero = () => {
               color: "#da4ea2",
               margin: 0,
               opacity: 0.75,
-              "backgroundClip": "text",
+              backgroundClip: "text",
             }}
           >
             {" "}

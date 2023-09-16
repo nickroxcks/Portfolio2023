@@ -15,6 +15,7 @@ const SectionTitle = (props) => {
   const dark = theme.palette.neutral.dark;
     return(
         <Box mt={2}>
+          {/*
         <Typography
           variant="h4"
           color= "rgba(255, 255, 255, 0.75)"
@@ -22,6 +23,10 @@ const SectionTitle = (props) => {
           fontSize="35px"
           marginBottom={"5px"}
         >
+          {props.title}
+        </Typography>
+    */}
+    <Typography fontWeight="500" variant="h3" fontSize={'35px'} >
           {props.title}
         </Typography>
         <Divider />

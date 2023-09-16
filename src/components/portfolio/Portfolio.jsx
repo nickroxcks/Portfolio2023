@@ -64,7 +64,7 @@ const Portfolio = () => {
           loaded={particlesLoaded}
           style={{position: 'absolute'}}
         ></Particles>
-        <NavbarPortfolio />
+        <NavbarPortfolio/>
 
         <Hero/>
 

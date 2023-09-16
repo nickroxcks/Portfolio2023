@@ -161,8 +161,8 @@ const NavbarPortfolio = (props) => {
           bottom="0"
           height="100%"
           zIndex="10"
-          maxWidth="500px"
-          minWidth="300px"
+          maxWidth="300px"
+          minWidth="200px"
           backgroundColor={background}
         >
           {/* CLOSE ICON */}
@@ -187,8 +187,9 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
-                href: '#home'
               }}
+              href='#home'
+              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
               HOME
             </Button>
@@ -197,8 +198,10 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
-                href: '#projects'
+                
               }}
+              href='#projects'
+              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
               PROJECTS
             </Button>
@@ -207,8 +210,9 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
-                href: '#skills'
               }}
+              href='#skills'
+              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
               SKILLS
             </Button>
@@ -217,8 +221,9 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
-                href: '#timeline'
               }}
+              href='#timeline'
+              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
               TIMELINE
             </Button>
@@ -227,8 +232,9 @@ const NavbarPortfolio = (props) => {
                 fontSize: "20px",
                 color: "rgba(255, 255, 255, 0.75)",
                 fontWeight: "bold",
-                href: '#contact'
               }}
+              href='#contact'
+              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
               CONTACT
             </Button>
