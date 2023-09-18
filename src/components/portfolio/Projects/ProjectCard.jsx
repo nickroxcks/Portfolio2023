@@ -10,6 +10,7 @@ import {
   IconButton,
   Box,
   useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import FlexBetween from "components/FlexBetween";
 import { motion } from "framer-motion";
@@ -20,29 +21,27 @@ export default function ProjectCard(props) {
 
   const pink = theme.palette.primary.pink;
   const testColor = theme.palette.background.alt;
+  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
-    <motion.div
-      variants={zoomIn(0.2, 0.5)}
-      initial="hidden"
-      whileInView="show"
-    >
+    <motion.div variants={zoomIn(0.2, 0.5)} initial="hidden" whileInView="show">
       <Card
         sx={[
           {
             boxShadow: "0px 0px 8px rgb(255,255,255)",
             position: "relative",
-            background: 'linear-gradient(to left top, #0c0218, #13061f, #190a26, #1e0d2d, #250e33, #2f113f, #3a144b, #461757, #581f6e, #6a2785, #7d309e, #9039b7)'
+            background:
+              "linear-gradient(to left top, #0c0218, #13061f, #190a26, #1e0d2d, #250e33, #2f113f, #3a144b, #461757, #581f6e, #6a2785, #7d309e, #9039b7)",
             //background: 'url("./img/bg.jpeg")'
             //backgroundColor: "#0f1624",
-
+            //background: "black"
           },
         ]}
-        
       >
         <CardActionArea>
           <CardMedia component="img" image={props.data.src} alt="VDPS" />
         </CardActionArea>
-        <CardContent 
+
+        <CardContent
         //sx={{height: '300px'}}
         >
           <Typography
@@ -59,29 +58,33 @@ export default function ProjectCard(props) {
         </CardContent>
         <Box sx={{ textAlign: "center" }}>
           {props.data.stack.map((skill, index) => {
-            return(
-            <IconButton key={index} aria-label="delete" sx={{ background: testColor, marginRight: 3 }}>
-              {skill}
-            </IconButton>)
+            return (
+              <IconButton
+                key={index}
+                aria-label="delete"
+                sx={{ background: testColor, marginRight: 3 }}
+              >
+                {skill}
+              </IconButton>
+            );
           })}
-          
         </Box>
         <CardActions disableSpacing={true} sx={{ justifyContent: "center" }}>
           <Button
             disabled={!props.data.liveDemoLink}
             href={props.data.liveDemoLink}
-            size="small"
-            sx={{color: pink}}
+            size="large"
+            sx={{ color: pink, marginRight: 3 }}
           >
-            Demo
+            View Demo
           </Button>
           <Button
             disabled={!props.data.codeLink}
             href={props.data.codeLink}
-            size="small"
-            sx={{color: pink}}
+            size="large"
+            sx={{ color: pink }}
           >
-            Code
+            View Code
           </Button>
         </CardActions>
       </Card>

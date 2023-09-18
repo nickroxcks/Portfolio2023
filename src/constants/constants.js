@@ -16,32 +16,6 @@ export const projectData = [
   },
   {
     id: 2,
-    src: "Buber.png",
-    title: "BUber",
-    summary: "Data Analytics Web Application for indivdual VDPS hardware units",
-    description:
-      "Uber is a popular mobile app that allows it's users to travel to any local destination with just a few clicks.  While this is very useful, can we do better? Introducing " +
-      "Buber, otherwise known as Better Uber. BUber utilizes google cloud technologies along with easy to navigate user interfaces to give it's users a cleaner experience. Features of the app include " +
-      "live location tracking of riders and drivers, optimal route finding, payment transactions, and more. ",
-    stack: ["Java", "Google Cloud", "Android Studio", "Firebase"],
-    liveDemoLink: null,
-    codeLink: "https://github.com/LukeDelaCruz/VDPS",
-    transition: "left",
-  },
-  {
-    id: 3,
-    src: "VDPSOverview.png",
-    title: "Voice Direction Processing System (VDPS)",
-    summary: "Data Analytics Web Application for indivdual VDPS hardware units",
-    description:
-      "The VDPS was a response to a proposal made by University Professor Steven Knudsen to create a system capable of detecting voices within a small room. Each VDPS hardware unit was capable of detecting sounds, pinpointing the exact direction of each distinct sound, and providing the sound data to the user via an API and web application. The web application was a React app hosted on AWS, and each hardware unit ran built in python scripts to connect the device to the webapp. By using the web application the user could remotely control every device registered under their name, view directional data of each sound using a custom made UI compass, apply sound filters, and manage all their devices on a clean dashboard. The system was scalable in that users could purchase hundreds of VDPS hardware units and manage each device using a very friendly user interface.",
-    stack: ["Python", "AWS", "React", "Node"],
-    liveDemoLink: null,
-    codeLink: "https://github.com/nickroxcks/VDPS_Public",
-    transition: "right",
-  },
-  {
-    id: 4,
     src: "dragonShell.png",
     title: "Dragon Shell",
     summary:
@@ -56,6 +30,33 @@ export const projectData = [
     codeLink: "https://github.com/nickroxcks/DragonShell.git",
     transition: "left",
   },
+  {
+    id: 3,
+    src: "VDPSOverview.png",
+    title: "Voice Direction Processing System (VDPS)",
+    summary: "Data Analytics Web Application for indivdual VDPS hardware units",
+    description:
+      "The VDPS was a response to a proposal made by University Professor Steven Knudsen to create a system capable of detecting voices within a small room. The solution involved reproducible raspberry pi hardware units, and an AWS web application. Each VDPS hardware unit was capable of detecting sounds, pinpointing the exact direction of each distinct sound, and providing the sound data to the user via an API and web application. The web application was a React app hosted on AWS, and each hardware unit ran built in python scripts to connect the device to the webapp. By using the web application the user could remotely control every device registered under their name. Web features included viewing directional data of surrounding sounds using a custom made UI compass, apply sound filters, and manage all their devices on a clean dashboard. The system was scalable in that users could purchase hundreds of VDPS hardware units and manage each device using a very friendly user interface.",
+    stack: ["Python", "AWS", "React", "Node"],
+    liveDemoLink: null,
+    codeLink: "https://github.com/nickroxcks/VDPS_Public",
+    transition: "right",
+  },
+  {
+    id: 4,
+    src: "Buber.png",
+    title: "BUber",
+    summary: "Data Analytics Web Application for indivdual VDPS hardware units",
+    description:
+      "Uber is a popular mobile app that allows it's users to travel to any local destination with just a few clicks.  While this is very useful, can we do better? Introducing " +
+      "Buber, otherwise known as Better Uber. BUber utilizes google cloud technologies along with easy to navigate user interfaces to give it's users a cleaner experience. Features of the app include " +
+      "live location tracking of riders and drivers, optimal route finding, payment transactions, and more. ",
+    stack: ["Java", "Google Cloud", "Android Studio", "Firebase"],
+    liveDemoLink: null,
+    codeLink: "https://github.com/LukeDelaCruz/VDPS",
+    transition: "left",
+  },
+  
 ];
 
 export const skillsData = [

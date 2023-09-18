@@ -36,7 +36,7 @@ const Timeline = () => {
     <div id='timeline'>
       <Box>
         <SectionTitle title={"TIMELINE"} />
-        <VerticalTimeline animate={true} lineColor="#0f1624">
+        <VerticalTimeline animate={true} lineColor="#0f1624" >
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
             let showButton =

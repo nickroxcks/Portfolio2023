@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../motion";
-import { useMediaQuery } from "@mui/material";
+import { useMediaQuery, Button } from "@mui/material";
 
 const Title = styled.h1`
   font-size: 60px;
@@ -53,7 +53,7 @@ background: linear-gradient(
   );
 
 */
-const Button = styled.button`
+const Button2 = styled.button`
 background: linear-gradient(to right, #d41aa4, #c9209e, #be2498, #b32892, #a92a8c, #a12887, #992782, #91257d, #891f78, #811973, #7a136e, #720c69);
   color: white;
   padding: 10px;
@@ -68,12 +68,24 @@ background: linear-gradient(to right, #d41aa4, #c9209e, #be2498, #b32892, #a92a8
   margin-top: 20px;
 
   &:hover {
-    animation: slidebg 5s linear infinite;
+    transform: scale(1.05)
   }
 
-  @keyframes slidebg {
-    to {
-      background-position:20vw;
+  @keyframes light {
+    0% {
+          background-position:-600px; 
+    }
+    100% { 
+          background-position:0px; 
+    }
+  }
+          
+  @-webkit-keyframes light {
+    0% {
+          background-position:-600px; 
+    }
+    100% { 
+          background-position:0px; 
     }
   }
 `;
@@ -115,7 +127,7 @@ const Hero = () => {
           </p>
         </Title>
         <Desc>The only way to make great work is to love what you do</Desc>
-        <Button>Learn More</Button>
+        <a href="#contact"><Button2>Contact Me</Button2></a>
       </div>
     </motion.div>
   );
