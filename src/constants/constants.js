@@ -1,7 +1,7 @@
 export const projectData = [
   {
     id: 1,
-    src: "fakebook.png",
+    src: "fakebook.PNG",
     title: "Fakebook",
     summary:
       "A Full Stack MERN social media application which replicates the popular Facebook platform with modern technologies   ",
@@ -16,7 +16,7 @@ export const projectData = [
   },
   {
     id: 2,
-    src: "dragonShell.png",
+    src: "dragonShell.PNG",
     title: "Dragon Shell",
     summary:
       "DragonShell is a command line application written in C++ which allows its users to interact with their operating system and perform standard OS level commands.",
