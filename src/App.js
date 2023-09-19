@@ -5,6 +5,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
 import Portfolio from "components/portfolio/Portfolio";
+import Timeline from "components/portfolio/Timeline/Timeline";
+import TestTimeline from "components/portfolio/Timeline/TestTimeline";
 function App() {
   /*
   - via useSelector, you can grab values from the store. Here, the values set are from the initial state
@@ -23,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/" element={<Portfolio />} />
+            <Route path="/test" element={<Timeline/>} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

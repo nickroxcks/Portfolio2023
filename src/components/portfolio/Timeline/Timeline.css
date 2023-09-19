@@ -8,6 +8,15 @@ h3 {
   padding-top: 0.25em;
 }
 
+
+
+
+/*Harded coded change needed for vertical timeline library to change line color*/
+.vertical-timeline::before{
+
+  background: #0f1624 !important;
+}
+
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
@@ -27,6 +36,7 @@ h3 {
   padding: 0.5em 1em;
   border-radius: 5px;
   color: white;
+  margin-top: 2em;
 }
 
 

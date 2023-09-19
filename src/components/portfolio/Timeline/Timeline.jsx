@@ -7,7 +7,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import timelineElements from "../../../constants/timelineElements";
-import "react-vertical-timeline-component/style.min.css";
+//import "react-vertical-timeline-component/style.min.css";
 import { useTheme } from "@emotion/react";
 import SectionTitle from "../SectionTitle";
 import { Box } from "@mui/material";
@@ -24,11 +24,13 @@ const Timeline = () => {
     background: "#A31EB6",
     "borderRadius": "50%",
     "boxShadow": "0 0 0 4px #0f1624",
+    //"boxShadow": "0 0 0 4px #0f1624",
   };
   let schoolIconStyles = {
     background: "#da4ea2",
     "borderRadius": "50%",
     "boxShadow": "0 0 0 4px #0f1624",
+    //"boxShadow": "0 0 0 4px #0f1624",
   };
   const theme = useTheme();
   const portfolioColor = theme.palette.background.portfolio;
@@ -54,6 +56,7 @@ const Timeline = () => {
                 //contentStyle={{ background: "transparent" }}
                 contentStyle={{ background:'linear-gradient(to left top, #0c0218, #13061f, #190a26, #1e0d2d, #250e33, #2f113f, #3a144b, #461757, #581f6e, #6a2785, #7d309e, #9039b7)'}}
                 iconClassName="bounce-out"
+                
               >
                 <h3
                   className="vertical-timeline-element-title"
@@ -70,6 +73,12 @@ const Timeline = () => {
                 <p id="description" style={{ color: "white" }}>
                   {element.description}
                 </p>
+
+                <h5
+                  style={{ color: "white", margin: "0 0 3em 0"}}
+                >
+                  {element.skills}
+                </h5>
                 {showButton && (
                   <a
                     className={`button ${
