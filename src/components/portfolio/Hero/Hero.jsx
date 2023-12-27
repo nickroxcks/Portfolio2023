@@ -12,6 +12,7 @@ const Title = styled.h1`
   font-family: Lato;
   @media only screen and (max-width: 1000px) {
     text-align: center;
+    font-size: 45px;
   }
 `;
 const TopDesc = styled.p`

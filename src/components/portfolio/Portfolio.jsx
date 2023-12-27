@@ -7,6 +7,7 @@ import FlexBetween from "components/FlexBetween";
 import Projects from "./Projects/Projects";
 import Timeline from "./Timeline/Timeline";
 import Skills from "./Skills/Skills";
+//import Skills from "./Skills/testSkills";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
