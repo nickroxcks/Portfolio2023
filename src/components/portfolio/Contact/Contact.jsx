@@ -81,7 +81,7 @@ const Contact = () => {
     <div id="contact">
       <SectionTitle title="CONTACT" />
       <Box
-        width={isNonMobile ? "30%" : "90%"}
+        width={isNonMobile ? "40%" : "95%"}
         p="2rem"
         m="2rem auto"
         borderRadius="1.5rem"
