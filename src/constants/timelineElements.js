@@ -1,6 +1,37 @@
 let timelineElements = [
   {
     id: 1,
+    title: "Attempting to Steal Amandas Bill Part 1",
+    location: "State and Main",
+    description:
+      "Winner: Amanda ",
+    date: "January 2024",
+    icon: "work",
+  },
+  {
+    id: 2,
+    title: "Attempting to Steal Amandas Bill Part 2",
+    location: "Cactus Club",
+    description:
+      "Winner: Amanda ",
+    date: "February 2024",
+    icon: "work",
+  },
+  {
+    id: 3,
+    title: "Attempting to Remember High School",
+    location: "Strathcona High School",
+    description:
+      "Winner: NICHOLAS SERRANO",
+    date: "February 2024",
+    icon: "work",
+  },
+]
+
+/*
+let timelineElements = [
+  {
+    id: 1,
     title: "Software Support Engineer",
     location: "Harris Utilities (SmartWorks), Canada",
     description:
@@ -70,5 +101,5 @@ let timelineElements = [
     icon: "school",
   },
 ];
-
+*/
 export default timelineElements;
