@@ -111,10 +111,12 @@ const Hero = () => {
           alignItems: "center",
         }}
       >
-        <TopDesc>HI THERE, WELCOME TO MY SITE</TopDesc>
+        <TopDesc>HI THERE, WELCOME TO THE COMPETITION OF</TopDesc>
         <Title>
-          I'm Nick
-          <br /> A Full Stack
+          NICHOLAS
+          <br />
+           VS
+          <br /> AMANDA
           <p
             style={{
               color: "#da4ea2",
@@ -124,10 +126,11 @@ const Hero = () => {
             }}
           >
             {" "}
-            Software Engineer
+            This competition is owned by Nick Serrano
           </p>
         </Title>
-        <Desc>The only way to make great work is to love what you do</Desc>
+        <Desc>The FCA provides that any person who knowingly submits, or causes to submit, 
+          <br/>to false claims of owership is liable for federal persecution </Desc>
         <a href="#contact"><Button2>Contact Me</Button2></a>
       </div>
     </motion.div>
