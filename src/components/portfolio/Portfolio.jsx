@@ -77,9 +77,11 @@ const Portfolio = () => {
         //position={"absolute"}  will get rid of animation
         //sx={{ background: 'linear-gradient(to right bottom, #9b14af, #ea007d, #ff4c45, #fa9405, #d1d01b)' }}
       >
-        <Projects />
+        {//<Projects />
+        }
         <Timeline />
-        <Skills />
+        {//<Skills />
+        }
 
         <Contact id="contact" />
       </Box>
